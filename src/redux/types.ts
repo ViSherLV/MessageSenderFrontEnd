@@ -1,5 +1,9 @@
-export const FETCH_USERS = 'FETCH_USERS'
-export const SHOW_LOADER = 'SHOW_LOADER'
-export const HIDE_LOADER = 'HIDE_LOADER'
-export const CHOOSEN_USERS = 'CHOOSEN_USERS'
-export const SEND_MESSAGE = 'SEND_MESSAGE'
+export const FETCH_USERS = "FETCH_USERS";
+export const SHOW_LOADER = "SHOW_LOADER";
+export const HIDE_LOADER = "HIDE_LOADER";
+export const CHOOSEN_USERS = "CHOOSEN_USERS";
+export const SEND_MESSAGE = "SEND_MESSAGE";
+export const SHOW_ALERT = "SHOW_ALERT";
+export const HIDE_ALERT = "HIDE_ALERT";
+export const SHOW_CONFIRM_ALERT = "SHOW_CONFIRM_ALERT";
+export const HIDE_CONFIRM_ALERT = "HIDE_CONFIRM_ALERT";

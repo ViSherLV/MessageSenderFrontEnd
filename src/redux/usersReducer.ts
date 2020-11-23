@@ -1,15 +1,23 @@
-import {FETCH_USERS, CHOOSEN_USERS} from './types'
-const initialState ={
-    users:[]
+import { FETCH_USERS, CHOOSEN_USERS } from "./types";
+interface UserReduceAction {
+  type: string;
+  payload: object;
 }
-export const usersReducer = (state = initialState, action) => {
-    const {payload} = action
-    switch(action.type){
-        case FETCH_USERS:
-            return {...state, users: payload}
-        
-        case CHOOSEN_USERS:
-            return {...state, choosenUsers:payload}
-        default: return state;
-    }
-}
+const initialState = {
+  users: [],
+};
+export const usersReducer = (
+  state = initialState,
+  action: UserReduceAction
+) => {
+  const { payload } = action;
+  switch (action.type) {
+    case FETCH_USERS:
+      return { ...state, users: payload };
+
+    case CHOOSEN_USERS:
+      return { ...state, choosenUsers: payload };
+    default:
+      return state;
+  }
+};
